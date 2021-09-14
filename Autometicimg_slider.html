@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Mmetic Image Slider usin HTML And CSS</title>
+</head>
+<style>
+    *{
+    
+    padding: 0;
+    margin: 0;
+    
+    }
+    body {
+        background-color: aqua;
+    }
+
+    .container {
+        width: 60%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        border-radius: 10px;
+        box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        animation: slide 20s infinite;
+    }
+    img {
+        width: 100%;
+    }
+    
+    @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img src=https://thumbs.dreamstime.com/b/picturesque-autumn-scenery-santa-maddalena-village-church-road-colorful-trees-meadows-foreground-mountain-peaks-159426189.jpg">
+            <img src="https://m.media-amazon.com/images/I/81A+qqYaYFL._SL1280_.jpg">
+            <img src="https://thumbs.dreamstime.com/b/beautiful-golden-autumn-scenery-trees-golden-leaves-sunshine-scotland-united-kingdom-beautiful-golden-autumn-124278811.jpg">
+            <img src="https://coolthemestores.com/wp-content/uploads/2021/04/nature-chrome-featured.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
